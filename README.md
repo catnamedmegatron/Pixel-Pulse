@@ -35,8 +35,6 @@ Built as a creative blend of AI, generative visuals, and mental wellness trackin
 
 ---
 
-## 🔹 Screenshots
+## 🔹 Demo Video
 
-```markdown
-![Input Page](assets/screenshot1.png)
-![Mood Output](assets/screenshot2.png)
+🎥 [PIXEL PULSE](assets/demo.mp4)

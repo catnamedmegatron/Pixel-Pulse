@@ -37,4 +37,4 @@ Built as a creative blend of AI, generative visuals, and mental wellness trackin
 
 ## 🔹 Demo Video
 
-🎥 [PIXLE PULSE](assets/demo.mp4)
+🎥 [PIXEL PULSE](assets/demo.mp4)

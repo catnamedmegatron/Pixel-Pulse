@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const analyzeBtn = document.getElementById("analyze-btn");
   const outputBox = document.getElementById("output");
 
-  const GEMINI_API_KEY = "AIzaSyBtAIKz5GrQ7oz-kTnbZ7TIQS68sENuVpU"; // Keep secure in real apps
+  const API_KEY = "YOUR_API_KEY_HERE"; // Replace this with your own Gemini API key
 
   async function analyzeWithGemini(text) {
     const prompt = `

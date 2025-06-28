@@ -24,6 +24,13 @@ Built as a creative blend of AI, generative visuals, and mental wellness trackin
 
 > This is a browser-based tool — no installations required!
 
+> 🛡️ To use this project, you need your own Gemini API key.
+> Replace the placeholder in `main.js` with your actual key:
+>
+> ```js
+> const API_KEY = "YOUR_API_KEY_HERE";
+> ```
+
 ---
 
 ## 🔹 Technologies Used

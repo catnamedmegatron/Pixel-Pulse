@@ -37,4 +37,4 @@ Built as a creative blend of AI, generative visuals, and mental wellness trackin
 
 ## 🔹 Demo Video
 
-🎥 [PIXEL PULSE](https://www.loom.com/share/bfa85519fa664682b694c9af10880453?sid=290c1488-a7d4-406a-8858-c0c5ce2b7158)
+[![PIXEL PULSE](https://cdn.loom.com/sessions/thumbnails/bfa85519fa664682b694c9af10880453-with-play.gif)](https://www.loom.com/share/bfa85519fa664682b694c9af10880453)

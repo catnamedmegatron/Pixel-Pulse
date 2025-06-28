@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PixelPulse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="reveal">
+    <div class="hero-container">
+      <div class="pixel-title">PixelPulse</div>
+      <h2 class="hero-heading">AI-Powered Mental Health Visualization</h2><br>
+      <p class="hero-subtext">
+        Detect emotional shifts through user reflections and social-style expressions.<br />
+        Visualized in expressive pixel art while preserving user privacy.
+      </p>
+      <p class="scroll-hint">▼ scroll to begin ▼</p>
+    </div>
+  </section>
+
+  <!-- Main App Section -->
+  <main>
+    <section class="input-section reveal">
+      <div class="side-by-side">
+        <div class="input-box">
+          <label for="reflection">Daily Reflection</label>
+          <textarea id="reflection" placeholder="How are you feeling today?"></textarea>
+        </div>
+        <div class="input-box">
+          <label for="social">Social-Style Posts</label>
+          <textarea id="social" placeholder="Paste recent tweets, captions, or blurbs..."></textarea>
+        </div>
+      </div>
+
+      <div class="button-wrap">
+        <button id="analyze-btn">Analyze</button>
+      </div>
+    </section>
+
+    <section id="output" class="reveal"></section>
+    <div id="mood-visual" class="reveal"></div>
+  </main>
+
+  <footer class="reveal">
+    <p>Made with 💜 by Team MEOW</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+  <script src="main.js"></script>
+  <script src="mood-sketch.js"></script>
+</body>
+</html>

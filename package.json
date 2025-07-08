@@ -1,0 +1,23 @@
+{
+  "name": "pixel-pulse",
+  "version": "1.0.0",
+  "description": "**PixelPulse** is an AI-powered mental health visualization tool that interprets user input (like journal entries) to detect mood and then generates pixel-style emotional art using p5.js.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catnamedmegatron/Pixel-Pulse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catnamedmegatron/Pixel-Pulse/issues"
+  },
+  "homepage": "https://github.com/catnamedmegatron/Pixel-Pulse#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -44,4 +44,4 @@ Experience PixelPulse live here: **[https://pixel-pulse-one.vercel.app/](https:/
 
 ## 🔹 Demo Video
 
-[![PIXEL PULSE](assets/demo-thumb.png)](https://www.loom.com/share/bfa8519fa664682b694c9af10880453)
+[![PIXEL PULSE](assets/demo-thumb.png)](https://www.loom.com/share/bfa85519fa664682b694c9af10880453?sid=33dd63f7-68df-4354-9f38-3f3a2a2b8a96)

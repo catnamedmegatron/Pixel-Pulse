@@ -39,9 +39,3 @@ Experience PixelPulse live here: **[https://pixel-pulse-one.vercel.app/](https:/
 -   **Gemini API** – for mood analysis (securely handled via Vercel Serverless Functions)
 -   GitHub Pages (for source code)
 -   **Vercel** – for hosting and serverless functions
-
----
-
-## 🔹 Demo Video
-
-[![PIXEL PULSE](assets/demo-thumb.png)](https://www.loom.com/share/bfa85519fa664682b694c9af10880453?sid=33dd63f7-68df-4354-9f38-3f3a2a2b8a96)

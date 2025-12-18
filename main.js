@@ -15,10 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Check if the serverless function itself returned an error
       if (!response.ok) {
-        const errorData = await response.json();
-        console.error("❌ Serverless function error:", errorData);
-        return `❌ Error from server: ${errorData.error || 'Unknown error'}`;
-      }
+  const errorData = await response.json();
+  console.error("❌ Serverless function error:", errorData);
+
+  if (response.status === 429) {
+    return "⏳ Too many requests. Please wait a minute and try again.";
+  }
+
+  return `❌ Error from server: ${
+    errorData.error?.message || errorData.error || 'Unknown error'
+  }`;
+}
+
 
       const result = await response.json();
       console.log("🔍 Gemini Raw API Response:", result);

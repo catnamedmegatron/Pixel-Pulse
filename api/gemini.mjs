@@ -50,10 +50,16 @@ Now analyze and respond accordingly.
     );
 
     const result = await geminiResponse.json();
-    console.log("🔍 Gemini Raw API Response from Serverless Function:", result);
+console.log("🔍 Gemini Raw API Response from Serverless Function:", result);
 
-    // Pass the Gemini API's response directly back to the frontend
-    response.status(200).json(result);
+if (!geminiResponse.ok) {
+  return response.status(geminiResponse.status).json({
+    error: result.error || "Gemini API error"
+  });
+}
+
+return response.status(200).json(result);
+
 
   } catch (error) {
     console.error("❌ Error calling Gemini API from serverless function:", error);

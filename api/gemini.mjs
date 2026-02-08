@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'; // Vercel's Node.js environment provides fetch
+// import fetch from 'node-fetch'; // Vercel's Node.js environment provides fetch
 
 export default async function handler(request, response) {
   if (request.method !== 'POST') {
@@ -36,18 +36,30 @@ Now analyze and respond accordingly.
   `; // FIXED: Added the missing 💤 emoji
 
   try {
-    const geminiResponse = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + geminiApiKey,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }]
-        })
-      }
-    );
+      const geminiResponse = await fetch(
+    "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=" + geminiApiKey,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        contents: [
+          {
+            role: "user",
+            parts: [
+              { text: prompt }
+            ]
+          }
+        ],
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 300
+        }
+      })
+    }
+  );
+
 
     const result = await geminiResponse.json();
 console.log("🔍 Gemini Raw API Response from Serverless Function:", result);

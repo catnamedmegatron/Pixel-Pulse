@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.error("❌ Serverless function error:", errorData);
 
   if (response.status === 429) {
-    return "⏳ Too many requests. Please wait a minute and try again.";
+    return "⏳ Gemini is rate-limited right now. Please try again in 30–60 seconds.";
   }
 
   return `❌ Error from server: ${
